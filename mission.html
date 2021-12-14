@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <nav class="vertical-menu-wrapper">
+        <div class="vertical-menu-logo">
+          <div>HiTech</div>
+          <span id="open-menu-btn" class="open-menu-btn"><hr><hr><hr></span>
+        </div>
+        <ul class="vertical-menu">
+          <li>
+              <a href="index.html">Dashboard</a>
+          </li>
+          <li>
+              <a href="mission.html">Mission</a>
+          </li>
+          <li>Map</li>
+          <li>Sound</li>
+          <li>Transition</li>
+          <li>Users</li>
+          <li>User groups</li>
+          <hr />
+          <li>Setting</li>
+          <li>Help</li>
+          <li id="user-info">Log out<span>online</span></li>
+        </ul>
+    </nav>
+    <div class="content-wrapper">
+        <div class="content">
+            <div class="content-header">
+                <div class="content-header__logo">
+                    <h2>Missions</h2>
+                    <span>Create and edit missions</span>
+                </div>
+                <div class="content-header__create">
+                    <button type="button" data-toggle="modal" data-target="#createMission"><i class="fas fa-plus"></i>Create mission</button>
+                </div>
+            </div>
+            <div class="content-main">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="card">
+                            <div class="card-header">
+                                <label for="">Show missions</label><br>
+                                <select class="select-mission" name="" id="">
+                                    <option value="">All missions</option>
+                                    <option value="">Change robot</option>
+                                    <option value="">Test mission</option>
+                                    <option value="">Transport Goods</option>
+                                </select>
+                                <button data-toggle="modal" data-target="#missionGroup" class="button-mission" type="button">Create / Edit groups</button>
+                            </div>
+                            <div class="card-body">
+                                <div class="mission-item">
+                                    <div class="content">
+                                        <h5>Change robot</h5>
+                                        <span>Company HQ</span>
+                                    </div>
+                                    <div class="control">
+                                        <button type="button">
+                                            <i class="fas fa-pencil-alt"></i>
+                                        </button>
+                                        <button type="button">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                        <button type="button">
+                                            <i class="fas fa-sticky-note"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="mission-item">
+                                    <div class="content">
+                                        <h5>Change robot</h5>
+                                        <span>Company HQ</span>
+                                    </div>
+                                    <div class="control">
+                                        <button type="button">
+                                            <i class="fas fa-pencil-alt"></i>
+                                        </button>
+                                        <button type="button">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                        <button type="button">
+                                            <i class="fas fa-sticky-note"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="mission-item">
+                                    <div class="content">
+                                        <h5>Change robot</h5>
+                                        <span>Company HQ</span>
+                                    </div>
+                                    <div class="control">
+                                        <button type="button">
+                                            <i class="fas fa-pencil-alt"></i>
+                                        </button>
+                                        <button type="button">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                        <button type="button">
+                                            <i class="fas fa-sticky-note"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="mission-item">
+                                    <div class="content">
+                                        <h5>Change robot</h5>
+                                        <span>Company HQ</span>
+                                    </div>
+                                    <div class="control">
+                                        <button type="button">
+                                            <i class="fas fa-pencil-alt"></i>
+                                        </button>
+                                        <button type="button">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                        <button type="button">
+                                            <i class="fas fa-sticky-note"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="mission-item">
+                                    <div class="content">
+                                        <h5>Change robot</h5>
+                                        <span>Company HQ</span>
+                                    </div>
+                                    <div class="control">
+                                        <button type="button">
+                                            <i class="fas fa-pencil-alt"></i>
+                                        </button>
+                                        <button type="button">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                        <button type="button">
+                                            <i class="fas fa-sticky-note"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="mission-item">
+                                    <div class="content">
+                                        <h5>Change robot</h5>
+                                        <span>Company HQ</span>
+                                    </div>
+                                    <div class="control">
+                                        <button type="button">
+                                            <i class="fas fa-pencil-alt"></i>
+                                        </button>
+                                        <button type="button">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                        <button type="button">
+                                            <i class="fas fa-sticky-note"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="mission-item">
+                                    <div class="content">
+                                        <h5>Change robot</h5>
+                                        <span>Company HQ</span>
+                                    </div>
+                                    <div class="control">
+                                        <button type="button">
+                                            <i class="fas fa-pencil-alt"></i>
+                                        </button>
+                                        <button type="button">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                        <button type="button">
+                                            <i class="fas fa-sticky-note"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                Mission queue
+                            </div>
+                            <div class="card-body">
+                                <div class="card-body__change text-center">
+                                    Changing... Waiting for new mission
+                                </div>
+                                <div class="card-body__content text-center mt-5 mb-4">
+                                    <i class="fas fa-spinner mb-3"></i>
+                                    <p>Loading the mission queue.</p>
+                                </div>
+                                <div class="card-body__mission-status">
+                                    <div class="mission-status__item">
+                                        <span>Test Mission</span>
+                                        <div class="status-control">
+                                            <button class="btn btn-warning">PENDING</button>
+                                            <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="createMission" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Create Mission</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body create-body">
+                <label for="">Name</label><br>
+                <input type="text">
+                <label for="">Description</label><br>
+                <input type="text">
+                <div class="row">
+                    <div class="mission-create col-md-6">
+                        <label for="">Description</label><br>
+                        <select name="" id="">
+                            <option value="">Missions</option>
+                            <option value="">Move</option>
+                            <option value="">Move</option>
+                        </select>
+                        <button data-toggle="modal" data-target="#missionGroup" class="form-btn btn btn-secondary" type="button">Create/Edit</button>
+                    </div>
+                    <div class="mission-create-custom col-md-6">
+                        <label for="">Description</label><br>
+                        <select name="" id="">
+                            <option value="">MIR HQ</option>
+                            <option value="">Move</option>
+                            <option value="">Move</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Create mission</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="missionGroup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Mission groups</h5>
+                    <div><span style="font-size: 12px; width: 250px; display: inline-block;">You can edit group names, delete groups or create new groups</span></div>
+                </div>
+                <button data-toggle="modal" data-target="#createMissionGroup" class="btn btn-primary">Create groups</button>
+            </div>
+            <div class="modal-body create-body mission-group">
+                <div class="mission-group-item">
+                    <h6>Move</h6>
+                    <div class="mission-group-control">
+                        <button class="btn btn-secondary" type="button">
+                            <i class="fas fa-pencil-alt"></i>
+                        </button>
+                        <button class="btn btn-secondary" type="button">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="mission-group-item">
+                    <h6>Move</h6>
+                    <div class="mission-group-control">
+                        <button class="btn btn-secondary" type="button">
+                            <i class="fas fa-pencil-alt"></i>
+                        </button>
+                        <button class="btn btn-secondary" type="button">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="mission-group-item">
+                    <h6>Move</h6>
+                    <div class="mission-group-control">
+                        <button class="btn btn-secondary" type="button">
+                            <i class="fas fa-pencil-alt"></i>
+                        </button>
+                        <button class="btn btn-secondary" type="button">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="mission-group-item">
+                    <h6>Move</h6>
+                    <div class="mission-group-control">
+                        <button class="btn btn-secondary" type="button">
+                            <i class="fas fa-pencil-alt"></i>
+                        </button>
+                        <button class="btn btn-secondary" type="button">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success">OK</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="createMissionGroup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h5 class="modal-title" id="exampleModalLongTitle"><i class="fas fa-cogs mr-2"></i>Create mission groups</h5>
+                    <div><span style="font-size: 12px">If you don't want to use any of the default group names, you can create your own group(s) and save missions
+                        here. New groups will be shown in the top bar next to the default groups and contain any mission(s) you want to
+                        add to it</span></div>
+                </div>
+            </div>
+            <div class="modal-body create-body create-mission-group">
+                <label for="">Name</label>
+                <input type="text">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">OK</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
+

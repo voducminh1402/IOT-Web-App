@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <nav class="vertical-menu-wrapper">
+        <div class="vertical-menu-logo">
+          <div>HiTech</div>
+          <span id="open-menu-btn" class="open-menu-btn"><hr><hr><hr></span>
+        </div>
+        <ul class="vertical-menu">
+          <li>Dashboard</li>
+          <li>
+              <a href="mission.html">Mission</a>
+          </li>
+          <li>Map</li>
+          <li>Sound</li>
+          <li>Transition</li>
+          <li>Users</li>
+          <li>User groups</li>
+          <hr />
+          <li>Setting</li>
+          <li>Help</li>
+          <li id="user-info">Log out<span>online</span></li>
+        </ul>
+    </nav>
+    <div class="content-wrapper">
+        <div class="header-hor">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="">
+                            S125
+                        </a>
+                    </li>
+                    <div>
+                        <li class="queue-mission">
+                            <button id="button-queue"><i style="color: white;" id="button-queue-i" class="fas fa-pause"></i></button>
+                            <span class="status-header__all">
+                                No missions in queue...
+                                <span class="status-header">RUNNING</span>
+                            </span>
+                        </li>
+                        <li>
+                            <a id="ok-queue" class="ok-queue" href="#">
+                                <i id="ok-queue-itag" style="color: green; margin-right: 5px;" class="fas fa-check"></i>
+                                <span>All OK</span>
+                            </a>
+                        </li>
+                        <li class="language">
+                            <a href="#">
+                                <img id="language-img" style="margin-right: 5px;" src="./assets/flags/GB.png" alt="">
+                                <span id="language-txt">ENGLISH</span>
+                            </a>
+                            <div class="language-sub">
+                                <div onclick="changeLang(this)">
+                                    <img style="margin-right: 5px;" src="./assets/flags/GB.png" alt="">
+                                    <span>ENGLISH</span>
+                                </div>
+                                <div onclick="changeLang(this)">
+                                    <img style="margin-right: 5px;" src="./assets/flags/VN.png" alt="">
+                                    <span>VIETNAM</span>
+                                </div>
+                                <div onclick="changeLang(this)">
+                                    <img style="margin-right: 5px;" src="./assets/flags/DE.png" alt="">
+                                    <span>GERMAN</span>
+                                </div>
+                                <div onclick="changeLang(this)">
+                                    <img style="margin-right: 5px;" src="./assets/flags/CN.png" alt="">
+                                    <span>CHINA</span>
+                                </div>
+                                <div onclick="changeLang(this)">
+                                    <img style="margin-right: 5px;" src="./assets/flags/DK.png" alt="">
+                                    <span>DANISH</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="distributor">
+                            <a href="#">
+                                <i style="margin-right: 5px;" class="fas fa-user"></i>
+                                Distributor
+                            </a>
+                            <div class="distributor-sub">
+                                <i class="fas fa-user"></i><br>
+                                <span>Distributor</span>
+                                <button>
+                                    <i style="margin-right: 5px;" class="fas fa-user"></i>
+                                    Change user data
+                                </button>
+                                <button>
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    Log out
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i style="margin-right: 5px;" class="fas fa-map-pin"></i>
+                                Joystick
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sign-in" href="">
+                                <i style="margin-right: 5px;" class="fas fa-battery-full"></i>
+                                92%
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>

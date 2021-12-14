@@ -1,0 +1,481 @@
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #181824;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  max-width: 300px;
+  bottom: 0;
+  top: 0;
+  display: block;
+  min-height: 300px;
+  height: 100%;
+  color: #fff;
+  opacity: 0.8;
+  transition: all 300ms;
+  -moz-transition: all 300ms;
+  -webkit-transition: all 300ms;
+}
+
+nav .vertical-menu hr {
+  opacity: 0.1;
+  border-width: 0.5px;
+}
+
+nav ul {
+  width: 90%;
+  padding-inline-start: 0;
+  margin: 10px;
+  height: calc(100% - 20px);
+}
+
+nav .vertical-menu-logo {
+  padding: 20px;
+  font-size: 1.3em;
+  position: relative;
+}
+
+nav .vertical-menu-logo .open-menu-btn {
+  width: 30px;
+  height: max-content;
+  position: absolute;
+  display: block;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+}
+
+nav .vertical-menu-logo .open-menu-btn hr {
+  margin: 5px 0;
+}
+
+nav li {
+  list-style: none;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+nav li:hover, nav li a:hover {
+  color: rgba(75, 105, 176, 1);
+}
+
+nav li#user-info {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+}
+
+nav li#user-info > span {
+  display: block;
+  float: right;
+  font-size: 0.9em;
+  position: relative;
+  opacity: 0.6;
+}
+
+nav li#user-info > span:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  background: green;
+  left: -20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.content-wrapper {
+  width: calc(100% - 300px);
+  height: 100%;
+  position: fixed;
+  background: #fff;
+  left: 300px;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu {
+  width: 95%;
+}
+
+.menu ul {
+  border-radius: 5px;
+  padding: 0px 20px;
+  box-shadow: 2px 2px 10px grey;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0px 20px;
+}
+
+.menu ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.menu ul li a:hover {
+  transition: ease-in 0.2s;
+  color: grey;
+}
+
+.status-header {
+  background-color: green;
+  color: white;
+  padding: 3px 5px;
+  font-size: 12px;
+  border-radius: 3px;
+  margin-left: 15px;
+}
+
+.status-header__all {
+  background-color: rgb(0, 36, 70);
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+.status-header__all {
+  font-size: 12px;
+}
+
+.language {
+  position: relative;
+}
+
+.language:hover .language-sub {
+  display: block;
+}
+
+.language-sub {
+  position: absolute;
+  width: 110px;
+  padding: 5px 10px;
+  line-height: 30px;
+  background-color: rgb(235,235,235);
+  display: none;
+  cursor: pointer;
+  left: -15%;
+}
+
+.language-sub div:hover {
+  color: rgb(104, 101, 101);
+}
+
+.language a{
+  display: inline-block !important;
+}
+
+.language a img {
+  margin-top: 15px;
+  top: 10%;
+}
+
+.distributor {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.distributor-sub {
+  width: 160px;
+  position: absolute;
+  line-height: 30px;
+  padding: 15px 10px;
+  background-color: rgb(235,235,235);
+  display: none;
+  left: -40%;
+}
+
+.distributor-sub button {
+  font-size: 12px;
+  padding: 7px 10px;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+
+.distributor-sub button:first-of-type {
+  background-color: rgb(0,0,255);
+}
+
+.distributor-sub button:nth-of-type(2) {
+  background-color: red;
+  margin-top: 5px;
+}
+
+.distributor:hover .distributor-sub {
+  display: block;
+}
+
+.queue-mission button {
+  background-color: rgb(0, 36, 70);
+  padding-top: 7px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.sign-in {
+  border-radius: 5px;
+  line-height: 15px;
+  padding: 10px 15px;
+  background-color: blue;
+  color: white !important;
+}
+
+.closed-menu .content-wrapper {
+  width: 100%;
+  left: 50px;
+}
+
+.content-wrapper {
+  transition: all 300ms;
+}
+
+.vertical-menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.vertical-menu-wrapper .vertical-menu-logo div {
+  transition: all 100ms;
+}
+
+.closed-menu .vertical-menu-wrapper .vertical-menu-logo div {
+  margin-left: -100px;
+}
+
+.vertical-menu-wrapper .vertical-menu-logo .open-menu-btn {
+  transition: all 300ms;
+}
+
+.vertical-menu-wrapper .vertical-menu-logo .open-menu-btn hr {
+  background-color: white;
+  height: 2px;
+}
+
+.closed-menu .vertical-menu-wrapper .vertical-menu-logo .open-menu-btn {
+  left: 7px;
+  right: 100%;
+}
+
+.closed-menu .vertical-menu-wrapper ul,
+.closed-menu .vertical-menu-wrapper hr {
+  margin-left: -300px;
+}
+
+.vertical-menu-wrapper ul,
+.vertical-menu-wrapper hr {
+  transition: all 100ms;
+}
+
+.content-wrapper {
+  background: #ebebeb;
+}
+
+.content {
+  width: 90%;
+  min-height: 90%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+/* END DASHBOARD PAGE */
+
+
+/* START MISSION PAGE */
+.content-header {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.content-header__create {
+    display: flex;
+    align-items: center;
+}
+
+.content-header__create button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.content-header__create i {
+    margin-right: 10px;
+}
+
+.select-mission {
+    width: 300px;
+    outline: none;
+}
+
+.button-mission {
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+.button-mission:focus {
+    outline: none;
+}
+
+.mission-item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(238, 233, 233);
+    padding: 5px 15px;
+}
+
+.mission-item .content {
+    margin-left: 0;
+    padding: 0;
+}
+
+.mission-item .content span {
+    font-size: 14px;
+
+}
+.mission-item .control {
+    display: flex;
+    align-items: center;
+}
+
+.mission-item .control button {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.mission-item .control button:nth-child(2) {
+    background-color: red;
+    color: white;
+}
+
+.mission-item .control button:nth-child(3) {
+    background-color: green;
+    color: white;
+}
+
+.mission-status__item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(238, 233, 233);
+  padding: 5px 7px;
+}
+
+.mission-status__item button {
+  padding: 2px 5px;
+  font-size: 12px;
+}
+
+.create-body input {
+  width: 100%;
+  outline: rgb(189, 187, 187);
+  border: 1px solid rgb(189, 187, 187);
+  background-color: rgb(245, 240, 240);
+  margin-bottom: 10px;
+}
+
+.create-body label {
+  font-weight: bold;
+}
+
+.form-btn {
+  padding: 0px 7px;
+}
+
+.mission-create select{
+  width: 50%;
+  height: 35px;
+  outline: rgb(189, 187, 187);
+  border: 1px solid rgb(189, 187, 187);
+  background-color: rgb(245, 240, 240);
+}
+
+.mission-create-custom select{
+  width: 100%;
+  height: 35px;
+  outline: rgb(189, 187, 187);
+  border: 1px solid rgb(189, 187, 187);
+  background-color: rgb(245, 240, 240);
+}
+
+.mission-group-item h6{
+  padding-left: 20px;
+}
+
+.mission-group-item:nth-child(2n+1) {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 7px;
+  background-color: rgb(241, 238, 238);
+}
+
+.mission-group-item:nth-child(2n) {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 7px;
+  background-color: rgb(255, 255, 255);
+}
+
+.mission-group {
+  padding-left: 0;
+  padding-right: 0;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.mission-group-control button{
+  padding: 2px 5px;
+}
+
+.create-mission-group {
+  height: 200px;
+}
